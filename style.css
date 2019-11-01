@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    position: relative;
+    height: 100%;
+    background: black;
+}
+
+
+.swiper-slide{
+    color: white;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 8em 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide1{
+    background-image: url('img/1.jpg');
+}
+
+.slide2{
+    background-image: url('img/4.jpg');
+}
+.slide3{
+    background-image: url('img/3.jpg');
+}
