@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> 3D Effect with Swiper </title>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <h1> Lovely Something </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, harum.</p>
+            </div>
+
+            <div class="swiper-slide slide2">
+                <h1> Lovely Something </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, harum.</p>
+            </div>
+
+            <div class="swiper-slide slide3">
+                <h1> Lovely Something </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, harum.</p>
+            </div>
+            
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!--  como é um projeto pequeno, eu estou utilizando a api por este link, sem precisar baixar algum arquivo. Caso for utilizar esse efeito em projetos grandes, é recomendado
+    baixar os arquivos da biblioteca -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+
+            navigation:{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+    </script>
+    <!-- as variaveis do script são pré configurações da própria API -->
+
+</body>
+
+</html>
